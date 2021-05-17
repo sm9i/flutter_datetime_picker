@@ -289,7 +289,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
                   showTitleActions: widget.route.showTitleActions, bottomPadding: bottomPadding),
               child: GestureDetector(
                 child: Material(
-                  color: theme.backgroundColor ?? Colors.white,
+                  color: theme.backgroundColor ,
                   child: _renderPickerView(theme),
                 ),
               ),
@@ -332,7 +332,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
       child: Container(
           padding: EdgeInsets.all(8.0),
           height: theme.containerHeight,
-          decoration: BoxDecoration(color: theme.backgroundColor ?? Colors.white),
+          decoration: BoxDecoration(color: theme.backgroundColor),
           child: NotificationListener(
               onNotification: (ScrollNotification notification) {
                 if (notification.depth == 0 &&
@@ -347,7 +347,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
               },
               child: CupertinoPicker.builder(
                   key: key,
-                  backgroundColor: theme.backgroundColor ?? Colors.white,
+                  backgroundColor: theme.backgroundColor,
                   scrollController: scrollController as FixedExtentScrollController?,
                   itemExtent: theme.itemHeight,
                   onSelectedItemChanged: (int index) {
@@ -374,7 +374,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
 
   Widget _renderItemView(DatePickerTheme theme) {
     return Container(
-      color: theme.backgroundColor ?? Colors.white,
+      color: theme.backgroundColor,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -447,7 +447,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
     return Container(
       height: theme.titleHeight,
       decoration: BoxDecoration(
-        color: theme.headerColor ?? theme.backgroundColor ?? Colors.white,
+        color: theme.headerColor ?? theme.backgroundColor,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
