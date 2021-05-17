@@ -1,10 +1,10 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=D:\SDK\flutter1.22.5"
-export "FLUTTER_APPLICATION_PATH=E:\flutter_application\flutter_datetime_picker\example"
-export "FLUTTER_TARGET=lib\main.dart"
+export "FLUTTER_ROOT=/Users/yiwang/SDK/flutter2.0.4"
+export "FLUTTER_APPLICATION_PATH=/Users/yiwang/Application/flutter_application/package/flutter_datetime_picker/example"
+export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
-export "SYMROOT=${SOURCE_ROOT}/../build\ios"
+export "SYMROOT=${SOURCE_ROOT}/../build/ios"
 export "FLUTTER_BUILD_NAME=1.0.0"
 export "FLUTTER_BUILD_NUMBER=1"
 export "DART_OBFUSCATION=false"
